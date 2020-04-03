@@ -4,25 +4,25 @@ body {
     background-color: black;
     color: white;
 }
+
+/* Home */
 #home {
     background-image: url(../C856Prototype/images/homeBackground.png);
-    background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 900px;
-    padding: 0;
+    z-index: 0;
 }
 #topBar {
-    top: 0;
     position: fixed;
+    top: 0;
     width: 100%;
-    height: 6%;
-    display: inline-block;
+    z-index: 1;
 }
 #logo{
-    padding: 8px 16px;
+    padding: 2px;
     float: left;
     width: auto;
     display: block;
@@ -30,15 +30,13 @@ body {
 #rightTopBar {
     display: block;
     float: right;
-    width: auto;
     border: none;
-    padding: 6px 16px;
+    padding: 16px;
 }
 .navItem {
     padding: 6px 16px;
     font-size: 25px;
     text-decoration: none;
-    margin: auto;
     cursor: pointer;
     color: white;
 }
@@ -49,8 +47,8 @@ body {
     position: fixed;
     top: 87%;
     width: 100%;
-    height: 10%;
     padding-bottom: 10px;
+    z-index: 1;
 }
 #bottomBar-left {
     float: left;
@@ -63,25 +61,50 @@ body {
 }
 
 /* Attractions */
+.subsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    overflow: scroll;
+    position: absolute;
+    top: 20%;
+}
+.subsectionTitle{
+    text-align: center;
+    font-size: 50px;
+}
 .selectionContainer{
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.selectionButton {
+    margin: 10px;
+    border-radius: 6px;
+}
+.attractionsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    left: 20%;
+    width: 60%;
+    margin-top: 5%;
 }
 .filterDiv {
-    float: left;
-    background-color: #2196F3;
-    color: #ffffff;
-    width: 200px;
-    text-align: center;
+    background-color: white;
+    color: black;
+    width: 100%;
     margin: 2px;
     display: none;
+    border-radius: 10px;
 }
 .show {
-    display: block;
+    display: flex;
 }
 .selectionButton{
-    border: none;
     outline: none;
-    padding: 12px 16px;
     background-color: #f1f1f1;
     cursor: pointer;
 }
@@ -91,8 +114,45 @@ body {
 .selectionButton:active {
     background-color: #666;
     color: white;
-  }
-
+}
+.attractionCardImage{
+    width: 350px;
+    padding: 10px;
+}
+.attractionCardTitle{
+    font-size: 20px;
+}
+.attractionCardText{
+    width: 300px;
+    padding: 10px;
+}
+.attractionCardHours{
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+}  
+.attractionCardHoursTitle{
+    font-size: 20px;
+    text-align: center;
+}
+.hoursContainer{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+}
+.attractionCardHoursDays{
+    text-align: left;
+    width: 150px;
+    padding: 0px;
+    margin: 0px;
+}
+.attractionCardHoursTime{
+    text-align: right;
+    width: 150px;
+    padding: 0px;
+    margin: 0px;
+}
 /* FAQ */
 .accordion {
     background-color: #eee;
@@ -114,7 +174,7 @@ body {
     display: none;
     background-color: white;
     color: black;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   .accordion:after {
     content: '\02795';
