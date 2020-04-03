@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taniti - Attractions</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+</head>
+<body>
+    <div>
+        <!-- <div id="topBar">
+            <div id="leftTopBar">
+                <a href="index.html" id="logo"><img src="../C856Prototype/images/logo2 - white.png" alt="Taniti Logo"></a>
+            </div>
+            <div id="rightTopBar">
+                <nav id="navbar">
+                    <a href="attractions.html" class="navItem">Attractions</a>
+                    <a href="lodging.html" class="navItem">Lodging</a>
+                    <a href="transportation.html" class="navItem">Transportation</a>
+                    <a href="blog.html" class="navItem">Blog</a>
+                    <a href="faq.html" class="navItem">FAQ</a>
+                </nav>
+            </div>
+        </div> -->
+        <footer id="bottomBar">
+            <div id="bottomBar-left">
+                <img class="socialIcon" onclick="" src = "../C856Prototype/images/global.png">
+            </div>
+            <div id="bottomBar-right">
+                <img class="socialIcon" onclick="" src = "../C856Prototype/images/facebook.png">
+                <img class="socialIcon" onclick="" src = "../C856Prototype/images/instagram.png">
+                <img class="socialIcon" onclick="" src="../C856Prototype/images/twitter.png">
+            </div>
+        </footer>
+    </div>
+    <div>
+        <h1>Attractions</h1>
+        <div class="selectionContainer">
+            <button class="selectionButton" onclick="filterSelection('all')">All</button>
+            <button class="selectionButton" onclick="filterSelection('see')">Things To See</button>
+            <button class="selectionButton" onclick="filterSelection('do')">Things To Do</button>
+            <button class="selectionButton" onclick="filterSelection('eat')">Things to Eat</button>
+        </div>
+    </div>
+    <div id="attractionsList">
+        <div class="attractionCard filterDiv see">
+            <img class="attractionCardImage">
+            <div class="attractionCardText">
+                <p class="attractionCardTitle">see</p>
+                <p class="attractionCardSubtitle">Subtitle</p>
+                <p class="attractionCardParagraph"></p>
+            </div>
+            <div class="attractionCardHours">
+                <p class="attractionCardHoursTitle">Hours Of Operation</p>
+                <p class="attractionCardHoursDays">Monday       XXam - XXpm</p>
+                <p class="attractionCardHoursDays">Tuesday      XXam - XXpm</p>
+                <p class="attractionCardHoursDays">Wednesday    XXam - XXpm</p>
+                <p class="attractionCardHoursDays">Thursday     XXam - XXpm</p>
+                <p class="attractionCardHoursDays">Friday       XXam - XXpm</p>
+                <p class="attractionCardHoursDays">Saturday     XXam - XXpm</p>
+                <p class="attractionCardHoursDays">Sunday       XXam - XXpm</p>
+            </div>
+        </div>
+        <div class="attractionCard filterDiv do">
+            <img class="attractionCardImage">
+            <div class="attractionCardText">
+                <p class="attractionCardTitle">do</p>
+                <p class="attractionCardSubtitle">Subtitle</p>
+                <p class="attractionCardParagraph"></p>
+            </div>
+            <div class="attractionCardHours">
+                <p class="attractionCardHoursTitle">Hours Of Operation</p>
+                <p class="attractionCardHoursDays">Monday       XXam - XXpm</p>
+                <p class="attractionCardHoursDays">Tuesday      XXam - XXpm</p>
+                <p class="attractionCardHoursDays">Wednesday    XXam - XXpm</p>
+                <p class="attractionCardHoursDays">Thursday     XXam - XXpm</p>
+                <p class="attractionCardHoursDays">Friday       XXam - XXpm</p>
+                <p class="attractionCardHoursDays">Saturday     XXam - XXpm</p>
+                <p class="attractionCardHoursDays">Sunday       XXam - XXpm</p>
+            </div>
+        </div>
+        <div class="attractionCard filterDiv eat">
+            <img class="attractionCardImage">
+            <div class="attractionCardText">
+                <p class="attractionCardTitle">eat</p>
+                <p class="attractionCardSubtitle">Subtitle</p>
+                <p class="attractionCardParagraph"></p>
+            </div>
+            <div class="attractionCardHours">
+                <p class="attractionCardHoursTitle">Hours Of Operation</p>
+                <p class="attractionCardHoursDays">Monday       XXam - XXpm</p>
+                <p class="attractionCardHoursDays">Tuesday      XXam - XXpm</p>
+                <p class="attractionCardHoursDays">Wednesday    XXam - XXpm</p>
+                <p class="attractionCardHoursDays">Thursday     XXam - XXpm</p>
+                <p class="attractionCardHoursDays">Friday       XXam - XXpm</p>
+                <p class="attractionCardHoursDays">Saturday     XXam - XXpm</p>
+                <p class="attractionCardHoursDays">Sunday       XXam - XXpm</p>
+            </div>
+        </div>
+    </div>
+    <script src="attractions.js"></script>
+</body>
+</html>
