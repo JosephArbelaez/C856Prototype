@@ -96,7 +96,7 @@ body {
     background-color: white;
     color: black;
     width: 100%;
-    margin: 2px;
+    margin-bottom: 10px;
     display: none;
     border-radius: 10px;
 }
@@ -107,6 +107,12 @@ body {
     outline: none;
     background-color: #f1f1f1;
     cursor: pointer;
+}
+.selectionButton:hover{
+    transition: all 0.2s ease;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 .selectionButton:hover {
     background-color: #ddd;
@@ -140,6 +146,7 @@ body {
     flex-direction: row;
     padding: 0px;
     margin: 0px;
+    font-size: 16px;
 }
 .attractionCardHoursDays{
     text-align: left;
