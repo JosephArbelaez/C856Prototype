@@ -1,7 +1,7 @@
 filterSelection("all");
 
 function filterSelection(c) {
-    var div = document.getElementsByClassName("filterDiv");
+    var div = document.getElementsByClassName("attractionCard");
     if (c == "all") {
         c = "";
     }
