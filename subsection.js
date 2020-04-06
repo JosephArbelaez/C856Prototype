@@ -1,5 +1,9 @@
+
+if(document.title == "Taniti - Lodging" || document.title == "Taniti - Blog"){
+    filterSelection("all");
+}
 function filterSelection(c) {
-    var div = document.getElementsByClassName("transportationCard");
+    var div = document.getElementsByClassName("subsectionCard");
     if (c == "all") {
         c = "";
     }
